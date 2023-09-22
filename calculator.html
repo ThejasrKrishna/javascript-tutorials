@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+<input type="text" id="t1" value="">
+<input type="text" id="t2" value=""> 
+<button onclick="add()" >Add</button>
+<button onclick="sub()" >sub</button>
+<button onclick="multiplicate()" >multiplicate</button>
+<button onclick="div()" >div</button>
+
+<script>
+function sub()
+{
+let x, y, z;  
+x =document.getElementById("t1").value;
+y = document.getElementById("t2").value;       
+z = parseInt(x) - parseInt (y) ;   
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";
+}
+
+function multiplicate()
+{
+let x, y, z;  
+x =document.getElementById("t1").value;
+y = document.getElementById("t2").value;       
+z = parseInt(x) * parseInt (y) ;   
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";
+}
+
+function div()
+{
+let x, y, z;  
+x =document.getElementById("t1").value;
+y = document.getElementById("t2").value;       
+z = parseInt(x) / parseInt (y) ;   
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";
+}
+
+function add()
+{
+let x, y, z;  
+x =document.getElementById("t1").value;
+y = document.getElementById("t2").value;       
+z = parseInt(x) +parseInt (y) ;   
+
+document.getElementById("demo").innerHTML =
+"The value of z is " + z + ".";
+}
+</script>
+
+</body>
+</html>
